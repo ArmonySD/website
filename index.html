@@ -9,49 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Fuente Roboto Condensed-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <!--Icons Bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="design.css">
     <title>Roy Armando - Software Developer</title>
 </head>
 <body>
     <!--Head-->
-    <div id="begin" class="container-head">
+    <div id="ini" class="container-head">
         <head>
             <h1>Roy Armando</h1>
             <p>Software Developer</p>
         </head>
     </div>
-    <
-
-    <!--Barnav-->
-    <div class="container-nav">
-        <nav class="nav-style">
-            <img src="img/tag.png" alt="logoTag" class="tag-style">
-            <ul class="menu-style">
-                <li>
-                    <a href="#begin">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Perfil</a>
-                </li>
-                <li>
-                    <a href="#">Educación/Experiencia</a>
-                </li>
-                <li>
-                    <a href="#">Habilidades</a>
-                </li>
-                <li>
-                    <a href="#">Proyectos</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+    <!--NavBar-->
+    <div class="topnav" id="myTopnav">
+        <a href="#ini" class="active">Inicio</a>
+        <a href="#pfl">Perfil</a>
+        <a href="#edu">Eduacion/Experiencia</a>
+        <a href="#hab">Habilidades</a>
+        <a href="#pro">Proyectos</a>
+        <a href="#con">Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="bi bi-list"></i>
+        </a>
     </div>
-
+<div class="content"><!--Sticky-->
     <!--Perfil-->
-    <div class="container-prfl">
+    <div id="pfl" class="container-prfl">
         <h2><i>Perfil</i></h2>
         <p class="pDev">Desarrollador de Software <b>Junior</b></p>
         <hr>
@@ -61,7 +47,7 @@
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa quibusdam autem in. Ipsa cumque ipsum illo labore ipsam autem.</p>
             </div>
-            <div class="box-prfl">
+            <div>
                 <img src="img/foto-pfl.jpg" alt="foto-prfl">
             </div>
             <div>
@@ -75,7 +61,7 @@
     </div>
 
     <!--Educación-->
-    <div class="container-edu">
+    <div id="edu" class="container-edu">
         <h2>Historial Académico</h2>
         <hr>
         <div class="column-edu">
@@ -84,7 +70,7 @@
                 <p><i>Agosto 2013 - Junio 2019</i></p>
             </div>
             <div>
-                <p><i>Mi perfil de egreso de esta institución fue como <b>Ing. Sistemas Computacionales</b> con especialidad en <b>Ingeniería de Software</b> durante mi formación académica, trabaje con diferentes tecnologías de desarrollo como ejemplo: C++, Java, C#, SQL.</i></p>
+                <p><i>Mi perfil de egreso de esta institución fue como <b>Ing. en Sistemas Computacionales</b> con especialidad en <b>Ingeniería de Software</b> durante mi formación académica, trabaje con diferentes tecnologías de desarrollo, como ejemplo: C++, Java, C#, SQL.</i></p>
             </div>
             <div>
                 <!--Vacio-->
@@ -129,7 +115,7 @@
     </div>
 
     <!--Habilidades-->
-    <div class="container-hab">
+    <div id="hab" class="container-hab">
         <h2>Habilidades</h2>
         <hr>
         <div class="column-hab">
@@ -213,7 +199,7 @@
     </div>
 
     <!--Projects-->
-    <div class="container-projects">
+    <div id="pro" class="container-projects">
         <h2>Proyectos</h2>
         <hr>
         <div class="column-projects">
@@ -231,9 +217,9 @@
             </div>
         </div>
     </div>
-
+</div><!--Sticky-->
     <!--Contact-->
-    <div class="container-footer">
+    <div id="con" class="container-footer">
         <div class="style-footer">
             <h2>Contacto</h2>
             <p>FRASE MAMALONA AQUI</p>
@@ -242,5 +228,9 @@
             <a href="mailto:ravs.900724@gmail.com">GMail</a>
         </div>
     </div>
+    <footer>
+        <p>Armony SD &copy;</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
