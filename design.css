@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -11,6 +14,10 @@ a{
 }
 ul{
     list-style: none;
+}
+i{
+    margin: 3px;
+    padding: 3px;
 }
 /********************************************** Movil *************************************************/
 
@@ -65,7 +72,7 @@ ul{
 .topnav .icon {
     display: none;
 }
-@media screen and (min-width: 768px){ /*Sticky Nav*/
+@media screen and (min-width: 807px){ /*Sticky Nav*/
     .content {
         padding: 16px;
     }
@@ -79,7 +86,7 @@ ul{
     }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 806px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
     float: right;
@@ -87,7 +94,7 @@ ul{
     }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 806px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
     position: absolute;
@@ -101,7 +108,7 @@ ul{
     }
 }
 /************************************************ CSS GRID ************************************************/
-/*Container Perfil*/
+/*********************************************Container Perfil*******************************************/
 .container-prfl{
     margin: 15px;
     padding: 15px;
@@ -132,7 +139,21 @@ ul{
     border: 8px solid rgb(92, 184, 92);
     border-radius: 50%;
 }
-/*Container Experiencia*/
+@media only screen and (min-width: 1024px){
+    .container-prfl{
+        margin: 40px;
+        padding: 40px;
+    }
+    .column-prfl{
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+    }
+    .column-prfl img{
+        width: 280px;
+        height: 280px;
+    }
+}
+/****************************************Container Experiencia********************************************/
 .container-edu{
     margin: 15px;
     padding: 15px;
@@ -150,7 +171,13 @@ ul{
     justify-content: center;
     gap: 10px;
 }
-/*Container Habilidades*/
+@media only screen and (min-width: 1024px){
+    .container-edu{
+        margin: 40px;
+        padding: 40px;
+    }
+}
+/*********************************************Container Habilidades**************************************/
 .container-hab{
     margin: 15px;
     padding: 15px;
@@ -166,7 +193,30 @@ ul{
     grid-row-gap: 10px;
     margin: 10px;
 }
-/*Container projects*/
+.izq{
+    width: 50%;
+    display: inline-block;
+}
+.der{
+    float: right;
+}
+.der:hover{
+    transform: scale(1.15);
+}
+@media only screen and (min-width: 1024px){
+    .container-hab{
+        margin: 40px;
+        padding: 40px;
+    }
+    .column-hab{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+    }
+    .izq{
+        width: 40%;
+    }
+}
+/*************************************************Container projects**************************************/
 .container-projects{
     margin: 15px;
     padding: 15px;
@@ -183,6 +233,15 @@ ul{
     gap: 15px;
     justify-content: space-around;
 }
+@media only screen and (min-width: 1024px){
+    .container-projects{
+        margin: 40px;
+        padding: 40px;
+    }
+    .column-projects{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 /******************************************* Flexbox *************************************************/
 /*Container Footer*/
 .container-footer{
@@ -191,7 +250,7 @@ ul{
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    height: 250px;
+    height: auto;
     background:	rgb(35, 39, 42);
     padding: 10px;
 }
@@ -206,16 +265,27 @@ ul{
 }
 .style-footer p{
     letter-spacing: 5px;
-    font-size: 26px;
+    font-size: 28px;
 }
 .style-footer a{
     color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(114, 137, 218);
     margin: 10px;
-    font-size: 26px;
+    font-size: 22px;
 }
 .style-footer a:hover{
     color: rgb(114, 137, 218);
+}
+#btn{
+    padding: 5px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(114, 137, 218);
+    border-radius: 6px;
+    border: 2px solid rgb(35, 39, 42);
+}
+#btn:hover{
+    background-color: rgb(92, 184, 92);
 }
 footer{
     text-align: center;
