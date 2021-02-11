@@ -147,6 +147,7 @@ i{
     .column-prfl{
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 10px;
+        justify-content: space-between;
     }
     .column-prfl img{
         width: 280px;
@@ -199,6 +200,7 @@ i{
 }
 .der{
     float: right;
+    color: rgb(92, 184, 92);
 }
 .der:hover{
     transform: scale(1.15);
